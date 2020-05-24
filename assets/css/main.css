@@ -1,0 +1,151 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+@media only screen and (max-width : 320px) {
+
+
+    /*-----TOP CONTENTS-----*/
+    .top_contents {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .main_title {
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .menu_icon {
+        position: absolute;
+        height: 20px;
+        right: 5%;
+
+    }
+
+    /*-----//  TOP CONTENTS-----*/
+    /*-----VEHICLE CHOICE CONTENTS-----*/
+
+    .vehicle_choice_wrap {
+        position: relative;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .pick_vehicle_title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .choose_vehicle_wheel {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .shown_vehicle_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .shown_vehicle {
+        width: 70%;
+        height: 30px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 15px;
+        background-color: #000;
+    }
+
+    .car_icon_wrap {
+        width: 220px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    /*-----//  VEHICLE CHOICE CONTENTS-----*/
+    /*-----VEHICLE INFORMATION CONTENTS-----*/
+
+    .cust_info_form {
+        position: relative;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin: auto;
+
+    }
+
+    #vehicle_reg,
+    #postcode {
+        width: 100%;
+        height: 35px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        outline: none;
+
+    }
+
+    #postcode {
+        margin-top: 20px;
+    }
+
+    .button_wrap {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .next_button,
+    .prev_button {
+        position: relative;
+        background-color: transparent;
+        border: none;
+
+
+    }
+
+    .next_icon,
+    .prev_icon {
+        position: relative;
+        height: 50px;
+    }
+
+
+    /*-----//  VEHICLE INFORMATION CONTENTS-----*/
+}
