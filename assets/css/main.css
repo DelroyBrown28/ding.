@@ -51,6 +51,12 @@ html {
 
     .pick_vehicle_title {
         width: 100%;
+        margin: 20px 0px 0px;
+        text-align: center;
+    }
+
+    .tap_to_select {
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -81,14 +87,15 @@ html {
         font-weight: 500;
         margin-top: 15px;
         background-color: #000;
+        
     }
 
     .car_icon_wrap {
-        width: 220px;
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0px;
 
 
     }
