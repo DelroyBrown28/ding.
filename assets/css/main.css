@@ -6,6 +6,7 @@ html {
     flex-flow: column;
     padding: 0;
     margin: 0;
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -87,10 +88,14 @@ html {
         font-weight: 500;
         margin-top: 15px;
         background-color: #000;
-        
+
+
     }
 
-    .car_icon_wrap {
+    .car_icon_wrap,
+    .van_icon_wrap {
+        position: relative;
+        width: 100%;
         height: 150px;
         display: flex;
         align-items: center;
@@ -99,6 +104,19 @@ html {
 
 
     }
+
+    .car_icon,
+    .van_icon {
+        margin: auto;
+    }
+
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+
 
     /*-----//  VEHICLE CHOICE CONTENTS-----*/
     /*-----VEHICLE INFORMATION CONTENTS-----*/
