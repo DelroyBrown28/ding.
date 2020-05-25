@@ -9,79 +9,85 @@
     <link rel="stylesheet" href="./assets/css/slick-theme.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>ding.</title>
 </head>
 
 <body>
 
-    
+
     <!--// BURGER MENU CONTENTS-->
 
-        <!--TOP CONTENTS-->
-        <div class="top_contents">
-            <h1 class="main_title">ding.</h1>
-            <!--<img src="./assets/images/burgermenuicon.png" alt="" class="menu_icon">-->
+    <!--TOP CONTENTS-->
+    <div class="top_contents">
+        <h1 class="main_title">ding.</h1>
+        <!--<img src="./assets/images/burgermenuicon.png" alt="" class="menu_icon">-->
+    </div>
+    <!--// TOP CONTENTS-->
+
+    <!--VEHICLE CHOICE CONTENTS-->
+    <div class="vehicle_choice_wrap swiper-container">
+
+        <h2 class="pick_vehicle_title">What are we cleaning?</h2>
+        <small class="tap_to_select">Tap to confirm choice</small>
+
+        <div class="choose_vehicle_wheel">
+
+            <div class="icon_wrap choice_car" name="Car">
+                <img src="./assets/images/car.png" alt="" class="car_icon">
+            </div>
+
+            <div class="icon_wrap choice_van" name="Van">
+                <img src="./assets/images/van.png" alt="" class="van_icon">
+            </div>
+
+            <div class="icon_wrap choice_bike" name="Motorbike">
+                <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
+            </div>
+
         </div>
-        <!--// TOP CONTENTS-->
 
-        <!--VEHICLE CHOICE CONTENTS-->
-        <div class="vehicle_choice_wrap swiper-container">
+        <div class="shown_vehicle_wrap">
 
-            <h2 class="pick_vehicle_title">What are we cleaning?</h2>
-            <small class="tap_to_select">Tap to confirm choice</small>
+            <div class="vehicle_text">
+                <small id="car_text" class="shown_vehicle">Car?</small>
+            </div>
 
-            <div class="choose_vehicle_wheel">
+            <div class="vehicle_text">
+                <small id="van_text" class="shown_vehicle">Van?</small>
+            </div>
 
-                <div class="icon_wrap choice_car" name="Car">
-                    <img src="./assets/images/car.png" alt="" class="car_icon">
-                </div>
+            <div class="vehicle_text">
+                <small id="bike_text" class="shown_vehicle">Bike?</small>
+            </div>
 
-                <div class="icon_wrap choice_van" name="Van">
-                    <img src="./assets/images/van.png" alt="" class="van_icon">
-                </div>
+        </div>
+    </div>
+    <!--// VEHICLE CHOICE CONTENTS-->
 
-                <div class="icon_wrap choice_bike" name="Motorbike">
-                    <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
-                </div>
+    <!--VEHICLE INFORMATION CONTENTS-->
+
+    <form class="cust_info_form">
+
+        <input type="text" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
+        <input type="text" id="postcode" placeholder="Postcode." autocomplete="off">
+
+        <div class="button_wrap">
+
+            <div class="slide_wrap">
+                <div class="folow_car_box"></div>
+                <i class="fas fa-car-side"></i>
+                <small class="next">next.</small>
 
             </div>
 
-            <div class="shown_vehicle_wrap">
 
-                <div class="vehicle_text">
-                    <small id="car_text" class="shown_vehicle">Car?</small>
-                </div>
-
-                <div class="vehicle_text">
-                    <small id="van_text" class="shown_vehicle">Van?</small>
-                </div>
-
-                <div class="vehicle_text">
-                    <small id="bike_text" class="shown_vehicle">Bike?</small>
-                </div>
-
-            </div>
-        </div>
-        <!--// VEHICLE CHOICE CONTENTS-->
-
-        <!--VEHICLE INFORMATION CONTENTS-->
-
-        <form class="cust_info_form">
-
-            <input type="text" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
-            <input type="text" id="postcode" placeholder="Postcode." autocomplete="off">
-
-            <div class="button_wrap">
-                <button class="next_button">
-                    <img src="./assets/images/carpedal1_white.png" alt="" class="next_icon">
-                </button>
-
-                <!--<button class="prev_button">
+            <!--<button class="prev_button">
                 <img src="./assets/images/carpedal1.png" alt="" class="prev_icon">
             </button>-->
 
-            </div>
-        </form>
+        </div>
+    </form>
 
 
     <!--// VEHICLE INFORMATION CONTENTS-->

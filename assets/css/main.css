@@ -13,7 +13,7 @@ html {
 
 
 
-@media only screen and (max-width : 360px) and (max-height : 740px) {
+@media only screen and (max-width : 320px) {
 
 
 
@@ -139,8 +139,7 @@ html {
         justify-content: center;
         flex-flow: column;
         margin: auto;
-
-        border-radius: 0px;
+        margin: 0;
 
     }
 
@@ -168,6 +167,36 @@ html {
         justify-content: center;
 
 
+    }
+
+    .slide_wrap {
+        position: absolute;
+        width: 70%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.3em;
+        margin-top: 35px;
+        border: 2px solid white;
+        overflow: hidden;
+    }
+
+    .folow_car_box {
+        position: absolute;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .fa-car-side {
+        position: absolute;
+        left: 0;
+        transition: 0.3s;
+        visibility: hidden;
     }
 
     .next_button,

@@ -13,4 +13,23 @@ $(document).ready(function () {
     })
 
 
+
+    // Animates 'next' button
+
+    $('.slide_wrap').click(function() {
+        $(this).animate({
+            height:  '25px'
+        },300, function() {
+            $('.next').fadeOut();
+        })
+        $('.fa-car-side').css('visibility', 'visible');
+        $('.fa-car-side').animate({
+            left: '100%'
+        }, function() {
+            $('.follow_car_box').animate({
+                width: '100%',
+            })
+        })
+        
+    })
 });
