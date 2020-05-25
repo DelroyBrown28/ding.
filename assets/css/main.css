@@ -7,7 +7,7 @@ html {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #DFE0DF;
+    background-color: #8CADCD;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -33,7 +33,7 @@ html {
     .main_title {
         font-size: 1em;
         font-weight: 900;
-        color: #FF8863;
+        color: #fff;
     }
 
     .menu_icon {
@@ -59,7 +59,7 @@ html {
         width: 100%;
         margin: 20px 0px 0px;
         text-align: center;
-        color: #FF8863;
+        color: #fff;
 
 
     }
@@ -95,7 +95,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #000;
+        color: #fff;
         font-size: 20px;
         font-weight: 500;
         margin-top: 15px;
@@ -150,7 +150,7 @@ html {
         height: 35px;
         background: transparent;
         border: none;
-        border-bottom: 2px solid #FF8863;
+        border-bottom: 2px solid #fff;
         outline: none;
 
 
