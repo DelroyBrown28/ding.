@@ -78,7 +78,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .shown_vehicle_wrap {
@@ -89,10 +89,6 @@ html {
 
     }
 
-    .vehicle_text {
-        width: 100%;
-
-    }
 
     .shown_vehicle {
         width: 100%;
