@@ -28,15 +28,15 @@
 
         <div class="choose_vehicle_wheel">
 
-            <div class="icon_wrap choice_car">
+            <div class="icon_wrap choice_car" name="Car">
                 <img src="./assets/images/car.png" alt="" class="car_icon">
             </div>
 
-            <div class="icon_wrap choice_van">
+            <div class="icon_wrap choice_van" name="Van">
                 <img src="./assets/images/van.png" alt="" class="van_icon">
             </div>
 
-            <div class="icon_wrap choice_bike">
+            <div class="icon_wrap choice_bike" name="Motorbike">
                 <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
             </div>
 
@@ -87,6 +87,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <script>
+        // Controls carousel for vehicle choice and vehicle name
         $('.choose_vehicle_wheel').slick({
             canterMode: true,
             infinite: false,
@@ -99,6 +100,25 @@
             asNavFor: '.choose_vehicle_wheel',
             fade: true,
         });
+
+        $('.choice_car').on('click', function () {
+            var CarValue = $(this).attr('name');
+            localStorage.setItem('carKey', CarValue);
+        })
+
+        $('.choice_van').on('click', function () {
+            var CarValue = $(this).attr('name');
+            localStorage.setItem('vanKey', CarValue);
+        })
+
+        $('.choice_bike').on('click', function () {
+            var CarValue = $(this).attr('name');
+            localStorage.setItem('bikeKey', CarValue);
+        })
+
+
+
+
     </script>
 </body>
 
