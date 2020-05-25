@@ -49,7 +49,19 @@
         </div>
 
         <div class="shown_vehicle_wrap">
-            <small class="shown_vehicle">Car</small>
+
+            <div class="vehicle_text">
+                <small class="shown_vehicle">Car</small>
+            </div>
+
+            <div class="vehicle_text">
+                <small class="shown_vehicle">Van</small>
+            </div>
+
+            <div class="vehicle_text">
+                <small class="shown_vehicle">Bike</small>
+            </div>
+
         </div>
     </div>
     <!--// VEHICLE CHOICE CONTENTS-->
@@ -86,6 +98,14 @@
             vertical: true,
             verticalSwiping: true,
             infinite: false,
+            lazyLoad: 'ondemand',
+            cssEase: 'linear',
+            asNavFor: '.shown_vehicle_wrap',
+        });
+        $('.shown_vehicle_wrap').slick({
+            infinite: false,
+            asNavFor: '.choose_vehicle_wheel',
+            fade: true,
         });
     </script>
 </body>
