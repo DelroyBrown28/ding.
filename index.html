@@ -13,71 +13,75 @@
 </head>
 
 <body>
-    <!--TOP CONTENTS-->
-    <div class="top_contents">
-        <h1 class="main_title">ding.</h1>
-        <img src="./assets/images/burgermenuicon.png" alt="" class="menu_icon">
-    </div>
-    <!--// TOP CONTENTS-->
 
-    <!--VEHICLE CHOICE CONTENTS-->
-    <div class="vehicle_choice_wrap swiper-container">
+    
+    <!--// BURGER MENU CONTENTS-->
 
-        <h2 class="pick_vehicle_title">What are we cleaning?</h2>
-        <small class="tap_to_select">Tap to confirm choice</small>
-
-        <div class="choose_vehicle_wheel">
-
-            <div class="icon_wrap choice_car" name="Car">
-                <img src="./assets/images/car.png" alt="" class="car_icon">
-            </div>
-
-            <div class="icon_wrap choice_van" name="Van">
-                <img src="./assets/images/van.png" alt="" class="van_icon">
-            </div>
-
-            <div class="icon_wrap choice_bike" name="Motorbike">
-                <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
-            </div>
-
+        <!--TOP CONTENTS-->
+        <div class="top_contents">
+            <h1 class="main_title">ding.</h1>
+            <!--<img src="./assets/images/burgermenuicon.png" alt="" class="menu_icon">-->
         </div>
+        <!--// TOP CONTENTS-->
 
-        <div class="shown_vehicle_wrap">
+        <!--VEHICLE CHOICE CONTENTS-->
+        <div class="vehicle_choice_wrap swiper-container">
 
-            <div class="vehicle_text">
-                <small id="car_text" class="shown_vehicle">Car?</small>
+            <h2 class="pick_vehicle_title">What are we cleaning?</h2>
+            <small class="tap_to_select">Tap to confirm choice</small>
+
+            <div class="choose_vehicle_wheel">
+
+                <div class="icon_wrap choice_car" name="Car">
+                    <img src="./assets/images/car.png" alt="" class="car_icon">
+                </div>
+
+                <div class="icon_wrap choice_van" name="Van">
+                    <img src="./assets/images/van.png" alt="" class="van_icon">
+                </div>
+
+                <div class="icon_wrap choice_bike" name="Motorbike">
+                    <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
+                </div>
+
             </div>
 
-            <div class="vehicle_text">
-                <small id="van_text" class="shown_vehicle">Van?</small>
-            </div>
+            <div class="shown_vehicle_wrap">
 
-            <div class="vehicle_text">
-                <small id="bike_text" class="shown_vehicle">Bike?</small>
-            </div>
+                <div class="vehicle_text">
+                    <small id="car_text" class="shown_vehicle">Car?</small>
+                </div>
 
+                <div class="vehicle_text">
+                    <small id="van_text" class="shown_vehicle">Van?</small>
+                </div>
+
+                <div class="vehicle_text">
+                    <small id="bike_text" class="shown_vehicle">Bike?</small>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <!--// VEHICLE CHOICE CONTENTS-->
+        <!--// VEHICLE CHOICE CONTENTS-->
 
-    <!--VEHICLE INFORMATION CONTENTS-->
+        <!--VEHICLE INFORMATION CONTENTS-->
 
-    <form class="cust_info_form">
+        <form class="cust_info_form">
 
-        <input type="text" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
-        <input type="text" id="postcode" placeholder="Postcode." autocomplete="off">
+            <input type="text" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
+            <input type="text" id="postcode" placeholder="Postcode." autocomplete="off">
 
-        <div class="button_wrap">
-            <button class="next_button">
-                <img src="./assets/images/carpedal2.png" alt="" class="next_icon">
-            </button>
+            <div class="button_wrap">
+                <button class="next_button">
+                    <img src="./assets/images/carpedal1_color.png" alt="" class="next_icon">
+                </button>
 
-            <!--<button class="prev_button">
+                <!--<button class="prev_button">
                 <img src="./assets/images/carpedal1.png" alt="" class="prev_icon">
             </button>-->
 
-        </div>
-    </form>
+            </div>
+        </form>
 
 
     <!--// VEHICLE INFORMATION CONTENTS-->
@@ -115,10 +119,6 @@
             var CarValue = $(this).attr('name');
             localStorage.setItem('bikeKey', CarValue);
         })
-
-
-
-
     </script>
 </body>
 
