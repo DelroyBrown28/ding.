@@ -13,7 +13,8 @@ html {
 
 
 
-@media only screen and (max-width : 320px) {
+
+@media only screen and (min-width : 320px) {
 
 
 
@@ -95,7 +96,8 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         font-size: 20px;
         font-weight: 500;
         margin-top: 15px;
@@ -121,13 +123,6 @@ html {
     }
 
 
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-
-
     /*-----//  VEHICLE CHOICE CONTENTS-----*/
     /*-----VEHICLE INFORMATION CONTENTS-----*/
 
@@ -140,6 +135,7 @@ html {
         flex-flow: column;
         margin: auto;
         margin: 0;
+        margin-top: 20px;
 
     }
 
@@ -159,6 +155,33 @@ html {
         margin-top: 20px;
     }
 
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #000;
+        padding-left: 3px;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000;
+        padding-left: 3px;
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #000;
+        padding-left: 3px;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #000;
+        padding-left: 3px;
+    }
+
+    /*-----//  VEHICLE INFORMATION CONTENTS-----*/
+    /*-----NEXT/PREV BUTTONS-----*/
+
     .button_wrap {
         width: 100%;
         margin-top: 30px;
@@ -169,53 +192,36 @@ html {
 
     }
 
-    .slide_wrap {
+    .button {
         position: absolute;
-        width: 70%;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
-        font-weight: 800;
-        font-size: 1.3em;
         margin-top: 35px;
-        border: 2px solid white;
         overflow: hidden;
+        border: 2px solid rgba(255, 255, 255, 0.445);
+        border-radius: 50%;
+        background: #8CADCD;
+        box-shadow: 5px 5px 10px #7b98b4,
+            -5px -5px 10px #9dc2e6;
     }
 
-    .follow_car_box {
-        position: absolute;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: #fff;
-    }
-
-    .fa-car-side {
-        position: absolute;
-        left: 0;
-        transition: 0.3s;
-        visibility: hidden;
-    }
-
-    .next_button,
-    .prev_button {
-        position: relative;
-        background-color: transparent;
-        border: none;
-        outline: none;
-
-    }
-
-    .next_icon,
-    .prev_icon {
-        position: relative;
-        height: 50px;
+    .dotted_next_icon {
+        height: 30px;
+        margin-left: 5px;
     }
 
 
-    /*-----//  VEHICLE INFORMATION CONTENTS-----*/
+    .next {
+        font-size: 1.1em;
+    }
+
+    /*-----//  NEXT/PREV BUTTONS-----*/
+
+
+
     /*-----HOVERS AND SUCH...-----*/
 }
 
@@ -223,8 +229,13 @@ html {
     opacity: 0.5;
 }
 
-.menu_item:active {
+.icon_wrap:active>.van_icon {
     opacity: 0.5;
 }
+
+.icon_wrap:active>.bike_icon {
+    opacity: 0.5;
+}
+
 
 /*-----//  HOVERS AND SUCH...-----*/

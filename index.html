@@ -74,17 +74,9 @@
 
         <div class="button_wrap">
 
-            <div class="slide_wrap">
-                <div class="follow_car_box"></div>
-                <i class="fas fa-car-side"></i>
-                <small class="next">next.</small>
-
+            <div class="button">
+                <img src="./assets/images/dottednextarrow.png" alt="" class="dotted_next_icon">
             </div>
-
-
-            <!--<button class="prev_button">
-                <img src="./assets/images/carpedal1.png" alt="" class="prev_icon">
-            </button>-->
 
         </div>
     </form>
@@ -107,8 +99,9 @@
         });
         $('.shown_vehicle_wrap').slick({
             infinite: false,
+            speed: 500,
             asNavFor: '.choose_vehicle_wheel',
-            fade: true,
+            fade: false,
         });
 
         $('.choice_car').on('click', function () {
