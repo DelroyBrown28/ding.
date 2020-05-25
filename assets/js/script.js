@@ -1,8 +1,15 @@
 $(document).ready(function () {
 
+    function windowLoad() {
+        $('.tap_to_select').animate({
+            opacity: "1",
+        }, 3000);
+    }
+    window.onload = windowLoad;
+
     $('.choice_car').click(function () {
         document.getElementById('car_text').innerHTML = "Great, got it.";
-    }, function() {
+    }, function () {
         $('.button').fadeOut()
     })
 
@@ -18,5 +25,5 @@ $(document).ready(function () {
 
     // Animates 'next' button
 
-    
+
 });

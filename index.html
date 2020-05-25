@@ -75,7 +75,9 @@
         <div class="button_wrap">
 
             <div class="button">
-                <img src="./assets/images/dottednextarrow.png" alt="" class="dotted_next_icon">
+                <div class="inner_button_wrap">
+                    <img src="./assets/images/dottednextarrow.png" alt="" class="dotted_next_icon">
+                </div>
             </div>
 
         </div>
@@ -98,10 +100,11 @@
             asNavFor: '.shown_vehicle_wrap',
         });
         $('.shown_vehicle_wrap').slick({
+            arrows: false,
             infinite: false,
             speed: 500,
             asNavFor: '.choose_vehicle_wheel',
-            fade: false,
+            fade: true,
             cssEase: 'linear',
 
         });
