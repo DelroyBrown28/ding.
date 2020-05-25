@@ -23,43 +23,37 @@
     <!--VEHICLE CHOICE CONTENTS-->
     <div class="vehicle_choice_wrap swiper-container">
 
-        <h2 class="pick_vehicle_title">Pick vehicle type.</h2>
+        <h2 class="pick_vehicle_title">What are we cleaning?</h2>
         <small class="tap_to_select">Tap to confirm choice</small>
 
         <div class="choose_vehicle_wheel">
 
-            <div class="car_icon_wrap">
+            <div class="icon_wrap choice_car">
                 <img src="./assets/images/car.png" alt="" class="car_icon">
             </div>
 
-            <div class="van_icon_wrap">
+            <div class="icon_wrap choice_van">
                 <img src="./assets/images/van.png" alt="" class="van_icon">
             </div>
 
-            <div class="van_icon_wrap">
-                <img src="./assets/images/motorbike.png" alt="" class="van_icon">
+            <div class="icon_wrap choice_bike">
+                <img src="./assets/images/motorbike.png" alt="" class="bike_icon">
             </div>
-
-
-            <div class="van_icon_wrap">
-            </div>
-
-
 
         </div>
 
         <div class="shown_vehicle_wrap">
 
             <div class="vehicle_text">
-                <small class="shown_vehicle">Car</small>
+                <small id="car_text" class="shown_vehicle">Car?</small>
             </div>
 
             <div class="vehicle_text">
-                <small class="shown_vehicle">Van</small>
+                <small id="van_text" class="shown_vehicle">Van?</small>
             </div>
 
             <div class="vehicle_text">
-                <small class="shown_vehicle">Bike</small>
+                <small id="bike_text" class="shown_vehicle">Bike?</small>
             </div>
 
         </div>
@@ -78,9 +72,9 @@
                 <img src="./assets/images/carpedal2.png" alt="" class="next_icon">
             </button>
 
-            <button class="prev_button">
+            <!--<button class="prev_button">
                 <img src="./assets/images/carpedal1.png" alt="" class="prev_icon">
-            </button>
+            </button>-->
 
         </div>
     </form>
@@ -95,8 +89,6 @@
     <script>
         $('.choose_vehicle_wheel').slick({
             canterMode: true,
-            vertical: true,
-            verticalSwiping: true,
             infinite: false,
             lazyLoad: 'ondemand',
             cssEase: 'linear',
