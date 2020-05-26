@@ -16,8 +16,6 @@ $(document).ready(function () {
 
     $('.choice_car').click(function () {
         document.getElementById('car_text').innerHTML = "Great, got it.";
-    }, function () {
-        $('.button').fadeOut()
     })
 
     $('.choice_van').click(function () {
@@ -35,7 +33,13 @@ $(document).ready(function () {
     $('.button').click( function() {
         $(this).animate({
             width: '100px',
-        }, 200)
+        }, 200,function() {
+            $('.arrow_next_icon').animate({
+                left: '100%'
+            }, function () {
+                location.href = 'nothinghereyet.html';
+            })
+        })
     })
 
 
