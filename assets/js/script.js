@@ -42,5 +42,14 @@ $(document).ready(function () {
         })
     })
 
+    // Animates text
+
+    new TypeIt('.pick_vehicle_title', {
+        strings: "What are we cleaning?",
+        speed: 75,
+        loop: false,
+        cursor: false,
+    }).go();
+
 
 });
