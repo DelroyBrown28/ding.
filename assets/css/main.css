@@ -202,6 +202,7 @@ html {
         justify-content: center;
         margin-top: 35px;
         overflow: hidden;
+        transition: 0.2s;
         border: 2px solid rgba(255, 255, 255, 0.534);
         border-radius: 50%;
         background: #8CADCD;
@@ -221,6 +222,7 @@ html {
     }
 
     .dotted_next_icon {
+        position: absolute;
         height: 30px;
         margin-left: 5px;
     }
@@ -249,5 +251,8 @@ html {
     opacity: 0.5;
 }
 
+.button:active {
+    box-shadow: none;
+}
 
 /*-----//  HOVERS AND SUCH...-----*/

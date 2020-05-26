@@ -25,5 +25,11 @@ $(document).ready(function () {
 
     // Animates 'next' button
 
+    $('.button').click( function() {
+        $(this).animate({
+            width: '100px',
+        }, 200)
+    })
+
 
 });
