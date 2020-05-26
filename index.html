@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/images/icon_blue.png"/>
+    <link rel="icon" type="image/png" href="./assets/images/icon_blue.png" />
 
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/slick.css" type="text/css">
@@ -17,8 +17,13 @@
 
 <body>
 
+    <!--SWIPE UP POP UP-->
 
-    <!--// BURGER MENU CONTENTS-->
+    <div class="swipe_up_popup">
+        <img src="./assets/images/swipeup.gif" alt="" class="swipe_gif">
+    </div>
+
+    <!--// SWIPE UP POP UP-->
 
     <!--TOP CONTENTS-->
     <div class="top_contents">
@@ -97,6 +102,8 @@
         $('.choose_vehicle_wheel').slick({
             canterMode: true,
             infinite: false,
+            vertical: true,
+            verticalSwiping: true,
             lazyLoad: 'ondemand',
             cssEase: 'linear',
             asNavFor: '.shown_vehicle_wrap',

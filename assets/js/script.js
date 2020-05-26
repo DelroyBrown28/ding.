@@ -1,11 +1,18 @@
 $(document).ready(function () {
 
     function windowLoad() {
-        $('.tap_to_select').animate({
+        $('.tap_to_select, .main_title').animate({
             opacity: "1",
-        }, 3000);
+        });
+        $('.swipe_up_popup').delay(500).fadeIn(4000);
     }
     window.onload = windowLoad;
+
+    setTimeout(function () {
+        $('.swipe_up_popup').fadeOut(1000);
+    }, 4000);
+
+    
 
     $('.choice_car').click(function () {
         document.getElementById('car_text').innerHTML = "Great, got it.";
