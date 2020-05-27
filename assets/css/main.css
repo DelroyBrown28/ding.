@@ -7,7 +7,7 @@ html {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #8CADCD;
+    background-color: #AACE60;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -124,6 +124,7 @@ html {
         font-weight: 600;
         text-align: center;
         opacity: 0;
+        color: #274B4B;
     }
 
     .choose_vehicle_wheel {
@@ -258,9 +259,9 @@ html {
         transition: 0.2s;
         border: 2px solid rgba(255, 255, 255, 0.534);
         border-radius: 50%;
-        background: #8CADCD;
-        box-shadow: 5px 5px 10px #7b98b4,
-            -5px -5px 10px #9dc2e6;
+        background: #AACE60;
+        box-shadow: 5px 5px 10px #99b956,
+            -5px -5px 10px #bbe36a;
     }
 
     .inner_button_wrap {
