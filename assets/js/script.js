@@ -30,14 +30,12 @@ $(document).ready(function () {
 
     // Animates 'next' button
 
-    $('.button').click( function() {
+    $('#button').click( function() {
         $(this).animate({
             width: '100px',
         }, 200,function() {
             $('.arrow_next_icon').animate({
                 left: '100%'
-            }, function () {
-                location.href = 'nothinghereyet.html';
             })
         })
     })

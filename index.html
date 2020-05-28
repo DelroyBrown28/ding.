@@ -77,12 +77,12 @@
 
     <form class="cust_info_form">
 
-        <input type="text" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
+        <input type="text" value="" id="vehicle_reg" placeholder="Vehicle Reg." autocomplete="off">
         <input type="text" id="postcode" placeholder="Postcode." autocomplete="off">
 
         <!--NEXT BUTTON-->
         <div class="button_wrap">
-            <div class="button">
+            <div id="button">
                 <div class="inner_button_wrap">
                     <img src="./assets/images/rightarrow.png" alt="" class="arrow_next_icon">
                 </div>
@@ -90,6 +90,7 @@
         </div>
         <!--// NEXT BUTTON-->
     </form>
+
 
 
     <!--// VEHICLE INFORMATION CONTENTS-->
@@ -134,6 +135,22 @@
             var CarValue = $(this).attr('name');
             localStorage.setItem('bikeKey', CarValue);
         })
+
+
+        document.getElementById("button").addEventListener("click", function () {
+            let vehicleReg = document.getElementById("vehicle_reg").value;
+            localStorage.setItem("vehicleRegKey", vehicleReg);
+
+        })
+
+        $('#button').click(function () {
+            console.log('waiting...');
+
+            setTimeout(function () {
+                location.href = 'more_details.html';
+            }, 1000)
+        })
+
     </script>
 </body>
 

@@ -81,8 +81,6 @@ html {
 
     }
 
-
-
     .main_title {
         font-size: 1em;
         font-weight: 900;
@@ -247,7 +245,7 @@ html {
 
     }
 
-    .button {
+    #button {
         position: absolute;
         width: 60px;
         height: 60px;
@@ -287,6 +285,87 @@ html {
     }
 
     /*-----//  NEXT/PREV BUTTONS-----*/
+    /*-----MORE DETAILS PAGE---------------------------*/
+
+    /*-----TOP CONTENTS-----*/
+
+    .top_contents_MD_page {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_title_MD_page {
+        color: #FFF;
+        font-size: 1em;
+        font-weight: 900;
+        margin: 0 auto;
+    }
+
+    /*-----//  TOP CONTENTS-----*/
+    /*-----LICENSE PLATE-----*/
+    
+    .plate_main {
+        height: 50px;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: flex;
+        background-color: #F7FBEC;
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
+
+    .left_plate {
+        width: 13%;
+        display: flex;
+        flex-flow: column;
+        background-color: blue;
+    }
+
+    .gb_logo {
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        border: 2px solid yellow;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .gb_text {
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    #license_plate_number {
+        margin: auto;
+        font-size: 2em;
+    }
+
+    .wrong_plate_button {
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border: none;
+        background-color: #FF7460;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.7em;
+        outline: none;
+    }
+    
+    
+    /*-----//  LICENSE PLATE-----*/
+
+
+
+
+    
+    /*-----//  MORE DETAILS PAGE---------------------------*/
 
 
 
@@ -305,7 +384,7 @@ html {
     opacity: 0.5;
 }
 
-.button:active {
+#button:active {
     box-shadow: none;
 }
 
