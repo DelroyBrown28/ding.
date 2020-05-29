@@ -290,7 +290,7 @@ html {
     /*-----TOP CONTENTS-----*/
 
     .top_contents_MD_page {
-        height: 10%;
+        height: 15%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -299,22 +299,24 @@ html {
 
     .main_title_MD_page {
         color: #FFF;
-        font-size: 1em;
-        font-weight: 900;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin: 0;
         margin: 0 auto;
     }
 
     /*-----//  TOP CONTENTS-----*/
     /*-----LICENSE PLATE-----*/
-    
+
     .plate_main {
         height: 50px;
         width: 250px;
         margin: 0 auto;
         margin-top: 15px;
+        font-weight: 500;
         display: flex;
         background-color: #F7FBEC;
-        border: 1px solid blue;
+        border: 2px solid #00B6FF;
         border-radius: 5px;
     }
 
@@ -322,7 +324,7 @@ html {
         width: 13%;
         display: flex;
         flex-flow: column;
-        background-color: blue;
+        background-color: #00B6FF;
     }
 
     .gb_logo {
@@ -344,27 +346,53 @@ html {
         font-size: 2em;
     }
 
-    .wrong_plate_button {
-        width: 100%;
-        height: 30px;
-        margin: 0 auto;
-        margin-top: 10px;
-        border: none;
-        background-color: #FF7460;
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 0.7em;
-        outline: none;
-    }
-    
-    
     /*-----//  LICENSE PLATE-----*/
+    /*-----INSIDE OR OUT BUTTONS-----*/
+
+    .inside_out_wrap {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-flow: column;
+        border: 1px solid black;
+    }
+
+    .insideoutisde_wrap {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .inside_out_buttons {
+        width: 80px;
+        height: 80px;
+        background-color: #00B6FF;
+        color: #fff;
+        border: none;
+        border: 2px solid #FFCD76;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .both_button_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #inside_button,
+    #outside_button {
+        margin-bottom: 15px;
+    }
+
+    /*-----//  INSIDE OR OUT BUTTONS-----*/
 
 
 
 
-    
+
     /*-----//  MORE DETAILS PAGE---------------------------*/
 
 
